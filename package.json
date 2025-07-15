@@ -1,6 +1,6 @@
 {
   "name": "2048-cli-game",
-  "version": "0.2.0",
+  "version": "0.2.2",
   "license": "MIT",
   "description": "2048 game for terminal.",
   "bin": {
@@ -30,7 +30,7 @@
   "devDependencies": {
     "@eslint/js": "^9.31.0",
     "@eslint/json": "^0.13.0",
-    "@hacxy/bump": "0.0.1-beta.5",
+    "@hacxy/bump": "0.0.1-beta.6",
     "@sindresorhus/tsconfig": "^3.0.1",
     "@types/node": "^24.0.13",
     "@types/react": "^18.0.32",
