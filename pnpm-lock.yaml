@@ -19,8 +19,8 @@ importers:
         version: 18.3.1
     devDependencies:
       '@hacxy/bump':
-        specifier: 0.0.1-beta.4
-        version: 0.0.1-beta.4(conventional-commits-filter@5.0.0)
+        specifier: 0.0.1-beta.5
+        version: 0.0.1-beta.5(conventional-commits-filter@5.0.0)
       '@sindresorhus/tsconfig':
         specifier: ^3.0.1
         version: 3.0.1
@@ -126,8 +126,8 @@ packages:
     resolution: {integrity: sha512-d9zaMRSTIKDLhctzH12MtXvJKSSUhaHcjV+2Z+GK+EEY7XKpP5yR4x+N3TAcHTcu963nIr+TMcCb4DBCYX1z6Q==}
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
 
-  '@hacxy/bump@0.0.1-beta.4':
-    resolution: {integrity: sha512-pih5d3PX9G27A8MVUByrOdzbWTUO9jqKkvNr8nMpazk0alifE0h6Hm/RUkQrmY6fxY3s5yjZrpJ6zFwSeVNKXQ==}
+  '@hacxy/bump@0.0.1-beta.5':
+    resolution: {integrity: sha512-Red9d9TO19LiRhla127FxyqmluDj88vcwqZysjpeoaSR/FWaUj9aLbqq924DR0IyVoo04D6GC/+4OHGHRuhn3Q==}
     engines: {node: ^18.0.0 || >=20.0.0}
     hasBin: true
 
@@ -3241,7 +3241,7 @@ snapshots:
 
   '@eslint/js@8.57.1': {}
 
-  '@hacxy/bump@0.0.1-beta.4(conventional-commits-filter@5.0.0)':
+  '@hacxy/bump@0.0.1-beta.5(conventional-commits-filter@5.0.0)':
     dependencies:
       conventional-changelog: 7.1.1(conventional-commits-filter@5.0.0)
       conventional-changelog-angular: 8.0.0
