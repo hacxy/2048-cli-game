@@ -1,15 +1,15 @@
-import {GRID_SIZE, MAX_VALUE} from './constants.js';
+import { GRID_SIZE, MAX_VALUE } from './constants.js';
 
 export const sumArray = (arr: number[]) => arr.reduce((a, b) => a + b, 0);
 
 // 收集所有空白位置
 export const getEmptyCells = (nums: number[][]) => {
-	const emptyCells: {row: number; col: number}[] = [];
+	const emptyCells: { row: number; col: number }[] = [];
 
 	for (let row = 0; row < nums.length; row++) {
 		for (let col = 0; col < nums[row]!.length; col++) {
 			if (nums[row]![col] === 0) {
-				emptyCells.push({row, col});
+				emptyCells.push({ row, col });
 			}
 		}
 	}
@@ -18,8 +18,8 @@ export const getEmptyCells = (nums: number[][]) => {
 };
 
 export const getRandomCells = (
-	emptyCells: {row: number; col: number}[],
-): {row: number; col: number} | undefined => {
+	emptyCells: { row: number; col: number }[],
+): { row: number; col: number } | undefined => {
 	if (emptyCells.length) {
 		return emptyCells[Math.floor(Math.random() * emptyCells.length)]!;
 	} else {
@@ -161,7 +161,7 @@ export const moveTiles = (
 			break;
 	}
 
-	return {board: newBoard, moved, score};
+	return { board: newBoard, moved, score };
 };
 
 export function countDigits(num: number): number {
@@ -215,4 +215,13 @@ export const hasMaxValue = (board: number[][]) => {
 		}
 	}
 	return false;
+};
+
+// 生成初始游戏板
+export const initializeBoard = () => {
+	const board = Array(GRID_SIZE)
+		.fill(0)
+		.map(() => Array(GRID_SIZE).fill(0));
+
+	return board;
 };
